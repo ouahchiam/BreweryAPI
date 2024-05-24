@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct StoicQuote: Codable {
+    let author: String
+    let quote: String
+}

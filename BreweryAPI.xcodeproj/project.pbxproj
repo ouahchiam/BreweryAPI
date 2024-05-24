@@ -14,6 +14,11 @@
 		BD4FA1BE2C008F3100DAD2AB /* BreweryAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1BD2C008F3100DAD2AB /* BreweryAPITests.swift */; };
 		BD4FA1C82C008F3100DAD2AB /* BreweryAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1C72C008F3100DAD2AB /* BreweryAPIUITests.swift */; };
 		BD4FA1CA2C008F3100DAD2AB /* BreweryAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1C92C008F3100DAD2AB /* BreweryAPIUITestsLaunchTests.swift */; };
+		BD4FA1D82C00900500DAD2AB /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1D72C00900500DAD2AB /* Brewery.swift */; };
+		BD4FA1DA2C0090DB00DAD2AB /* AutocompleteResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1D92C0090DB00DAD2AB /* AutocompleteResult.swift */; };
+		BD4FA1DD2C00918B00DAD2AB /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1DC2C00918B00DAD2AB /* ApiManager.swift */; };
+		BD4FA1E32C00979300DAD2AB /* BreweryDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1E22C00979300DAD2AB /* BreweryDetailedView.swift */; };
+		BD4FA1E62C00A00100DAD2AB /* StoicQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4FA1E52C00A00100DAD2AB /* StoicQuote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		BD4FA1C32C008F3100DAD2AB /* BreweryAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreweryAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4FA1C72C008F3100DAD2AB /* BreweryAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryAPIUITests.swift; sourceTree = "<group>"; };
 		BD4FA1C92C008F3100DAD2AB /* BreweryAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD4FA1D72C00900500DAD2AB /* Brewery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		BD4FA1D92C0090DB00DAD2AB /* AutocompleteResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteResult.swift; sourceTree = "<group>"; };
+		BD4FA1DC2C00918B00DAD2AB /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		BD4FA1E22C00979300DAD2AB /* BreweryDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreweryDetailedView.swift; sourceTree = "<group>"; };
+		BD4FA1E52C00A00100DAD2AB /* StoicQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoicQuote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,9 @@
 		BD4FA1AB2C008F2E00DAD2AB /* BreweryAPI */ = {
 			isa = PBXGroup;
 			children = (
+				BD4FA1E12C00978700DAD2AB /* Views */,
+				BD4FA1DB2C00916400DAD2AB /* Managers */,
+				BD4FA1D62C008FF700DAD2AB /* Models */,
 				BD4FA1AC2C008F2E00DAD2AB /* BreweryAPIApp.swift */,
 				BD4FA1AE2C008F2E00DAD2AB /* ContentView.swift */,
 				BD4FA1B02C008F3000DAD2AB /* Assets.xcassets */,
@@ -125,6 +138,48 @@
 				BD4FA1C92C008F3100DAD2AB /* BreweryAPIUITestsLaunchTests.swift */,
 			);
 			path = BreweryAPIUITests;
+			sourceTree = "<group>";
+		};
+		BD4FA1D62C008FF700DAD2AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD4FA1E42C009FF700DAD2AB /* Misc */,
+				BD4FA1DE2C00923E00DAD2AB /* Breweries */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD4FA1DB2C00916400DAD2AB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BD4FA1DC2C00918B00DAD2AB /* ApiManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BD4FA1DE2C00923E00DAD2AB /* Breweries */ = {
+			isa = PBXGroup;
+			children = (
+				BD4FA1D72C00900500DAD2AB /* Brewery.swift */,
+				BD4FA1D92C0090DB00DAD2AB /* AutocompleteResult.swift */,
+			);
+			path = Breweries;
+			sourceTree = "<group>";
+		};
+		BD4FA1E12C00978700DAD2AB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD4FA1E22C00979300DAD2AB /* BreweryDetailedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD4FA1E42C009FF700DAD2AB /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				BD4FA1E52C00A00100DAD2AB /* StoicQuote.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4FA1AF2C008F2E00DAD2AB /* ContentView.swift in Sources */,
+				BD4FA1E32C00979300DAD2AB /* BreweryDetailedView.swift in Sources */,
+				BD4FA1E62C00A00100DAD2AB /* StoicQuote.swift in Sources */,
+				BD4FA1D82C00900500DAD2AB /* Brewery.swift in Sources */,
+				BD4FA1DD2C00918B00DAD2AB /* ApiManager.swift in Sources */,
 				BD4FA1AD2C008F2E00DAD2AB /* BreweryAPIApp.swift in Sources */,
+				BD4FA1DA2C0090DB00DAD2AB /* AutocompleteResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
